@@ -2,18 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <title>Title</title>
 </head>
 <body>
-    <form>
-        <label>请输入倍速速率</label>
-        <input id="speed" type="text">
-        <br>
-        <input id="file" type="file">
-        <input id="button" type="button" value="mySubmit" onclick="myFunc()">
-    </form>
-    <video src="" id="video" controls>video</video>
-    <p id="text"></p>
+    <div class="container">
+        <div class="row">
+            <label>请输入倍速速率</label>
+            <input id="speed" type="text">
+        </div>
+        <div class="row">
+            <input id="file" type="file">
+        </div>
+        <div class="row">
+            <input class="btn btn-success" id="button" type="button" value="mySubmit" onclick="myFunc()">
+        </div>
+        <div class="row">
+            <video src="" id="video" controls height="300px" width="500px">video</video>
+        </div>
+    </div>
 <script src="1.js"></script>
 </body>
 </html>
